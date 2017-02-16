@@ -8,25 +8,27 @@ depends: to build the images you need gdal and imagemagick
 
 the fork where I have generated all this is into the master build of naev is at https://github.com/bobombolo/naev/tree/realworld/dat from there you could just download the dat/ssys/, dat/assets/ and dat/gfx/planets/space/mapped/ as well as the modified dat/tech.xml and dat/start.xml and drop them in your copy of naev and it should work.
 
-DONE:
--the world was covered by a hex grid, each hex is 10 degrees of lattitude high, the largest city in that hex becomes the name for the hex. The system is then placed on the universe according to the city's real world coordinates. Within the system however, the hex centroid is used for the system centroid, neighbors calculated according to the hex are placed at the system boundaries and about 8-9 additional planets (most populous) are placed relative to eachother according to real world coordinates if they exist. One Station and one Shipyard is also placed. Factions settings and available outfits / ships / services set according to planetary or station specs, though not too sophisticated yet.
+++DONE:
 
--graphics generated from real world basemap, the planet are a crop of their real world topography, with shading to indicate distance and direction to the system center (sun), and size relative to the city population.
++++332 Star Systems with 2394 Planets, schema: the world was covered by a hex grid, each hex is 10 degrees of lattitude high, the largest city in that hex becomes the name for the hex. The system is then placed on the universe according to the city's real world coordinates. Within the system however, the hex centroid is used for the system centroid, neighbors calculated according to the hex are placed at the system boundaries and about 8-9 additional planets (most populous) are placed relative to eachother according to real world coordinates if they exist. One Station and one Shipyard is also placed. Factions settings and available outfits / ships / services set according to planetary or station specs, though not too sophisticated yet.
 
--tech that breaks the game (basically maps for systems that don't exist) and start point edited to avoid crashes
++++graphics generated from real world basemap, the planet are a crop of their real world topography, with shading to indicate distance and direction to the system center (sun), and size relative to the city population.
 
--factions translated to continent, so spawning, etc works.
++++tech that breaks the game (basically maps for systems that don't exist) and start point edited to avoid crashes
 
-TODO:
--only cargo missions from the mission screen on planets work. the idea is to build a find/replace planet and system names from the existing missions to work with the new universe... possibly replacing the names of the factions with the names of real world military alliances... possibly revamping the existing missions to be more generic.
++++factions translated to continent, so spawning, etc works.
 
--more work needs to be done on deciding which systems get which outfits which might require some group heirarchy in the tech.xml file
+++TODO:
 
--adding of some planets, asteroids and stations to represent more real world features such as volcanoes (lava planets), lakes (ocean planets), etc.
++++only cargo missions from the mission screen on planets work. the idea is to build a find/replace planet and system names from the existing missions to work with the new universe... possibly replacing the names of the factions with the names of real world military alliances... possibly revamping the existing missions to be more generic.
 
--currently airports are used as military bases, ports as shipping yards, could have more variety and better data sources for these
++++more work needs to be done on deciding which systems get which outfits which might require some group heirarchy in the tech.xml file
 
--the source spreadsheets include average annual temperature and precipitation, as well as elevation for the cities, which could be used to further customize the planet graphics both from space and once landed, as well as availability of various commodities, etc... source files for real world commodities and mineral and other raw resources and crops would be useful for deciding commodities. the source spreadsheets include economic status, gdp, income_grp, population and other attributes that could be useful in further differentiating systems, faction presence, etc.
++++adding of some planets, asteroids and stations to represent more real world features such as volcanoes (lava planets), lakes (ocean planets), etc.
+
++++currently airports are used as military bases, ports as shipping yards, could have more variety and better data sources for these
+
++++the source spreadsheets include average annual temperature and precipitation, as well as elevation for the cities, which could be used to further customize the planet graphics both from space and once landed, as well as availability of various commodities, etc... source files for real world commodities and mineral and other raw resources and crops would be useful for deciding commodities. the source spreadsheets include economic status, gdp, income_grp, population and other attributes that could be useful in further differentiating systems, faction presence, etc.
 
 
 here are some screenshots:
